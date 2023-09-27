@@ -1,28 +1,29 @@
 import Topbar from './Topbar';
 import Sidebar from './Sidebar';
-import { Grip, Bell, Mail, Settings, Moon, ChevronDown } from 'lucide-react';
+import { Grip, Bell, Mail, Settings, Moon, ChevronDown, Plus } from 'lucide-react';
 
 const PanelLayout = ({ children }) => {
     return (
-        <div className='flex flex-col gap-[10px]'>
+        <div className=' w-[1440px] flex flex-col gap-[10px]'>
             <div className="h-[72px] p-[10px] bg-white justify-between items-center flex">
                 <div className="h-7 justify-start items-center gap-4 flex">
                     <div className="w-6 h-6 relative cursor-pointer">
-                        <Grip />
+                        
                     </div>
-                    <div className="justify-start items-center gap-2 flex">
+                    
                         <div className="justify-start items-center gap-9 flex cursor-pointer">
                             <Grip />
                             <div className="text-gray-900 text-xl font-semibold font-['Inter'] leading-7">Test Project</div>
                         </div>
-                        <div className="w-6 h-6 relative cursor-pointer" />
-                    </div>
+                        
+                  
                 </div>
 
                 <div className="justify-start items-center gap-6 flex">
-
-                    <div className="w-6 h-6 relative cursor-pointer" />
-                    <div className="w-3.5 h-3.5 relative cursor-pointer">
+              
+                   
+                   
+                    <div className="w-6 h-6 relative cursor-pointer">
                         <Bell />
                         <div className="w-3.5 h-3.5 left-0 top-0 absolute bg-green-400 rounded-full" />
                         <div className="w-3.5 h-3.5 left-0 top-0 absolute text-center text-white text-[8px] font-medium font-['Inter'] leading-snug">2</div>
@@ -38,7 +39,7 @@ const PanelLayout = ({ children }) => {
                             <div className="w-6 h-6 relative cursor-pointer" >
                                 <Moon />
                             </div>
-                            <img className="w-[40.50px] h-[40.50px] rounded-full cursor-pointer" src="https://via.placeholder.com/40x40" />
+                            <img className="w-[35px] h-[35px] rounded-full cursor-pointer" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww&w=1000&q=80" />
                         </div>
                         <div className=" w-6 h-6 relative">
             <select className="appearance-none bg-transparent border-none text-gray-500 text-xs font-normal font-['Inter'] leading-none outline-none cursor-pointer">

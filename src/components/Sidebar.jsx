@@ -2,7 +2,7 @@
 import React, { useContext, createContext, useState } from "react";
 import { NavLink } from 'react-router-dom';
 
-import { MoreVertical, ChevronLast, ChevronFirst } from "lucide-react";
+import { MoreHorizontal, ChevronLast, ChevronFirst } from "lucide-react";
  import { Gauge, Home, CopyCheck, UserSquare2, BadgeCheck, Paperclip, ClipboardList, ChevronRight, ChevronLeft } from "lucide-react";
 
 
@@ -103,14 +103,15 @@ export function SidebarItem({ icon, text,  url,active, alert }) {
     <>
     
     <NavLink to={url} activeClassName="">
+    
       <li
         className={`
           relative flex items-center py-2 px-3 my-1
           rounded-md cursor-pointer
-          transition-colors group text-slate-700 text-[15px] font-medium font-['Inter'] leading-none
+          transition-colors group text-slate-700  font-medium  font-['Inter'] leading-none
           ${
             active
-              ? "text-slate-800 text-xl font-medium font-['Inter'] leading-none"
+              ? "text-slate-800 text-xs font-medium font-['Inter'] leading-none"
               : "hover:bg-[#EBEBF8] text-xs"
           }
         `}
@@ -123,6 +124,7 @@ export function SidebarItem({ icon, text,  url,active, alert }) {
         >
           {text}
         </span>
+        <MoreHorizontal size={12} />
         {alert && (
           <div
             className={`absolute right-2 w-2 h-2 rounded bg-indigo-400 ${
@@ -140,7 +142,7 @@ export function SidebarItem({ icon, text,  url,active, alert }) {
               group-hover:visible group-hover:opacity-100 group-hover:translate-x-0
             `}
           >
-           
+        
           </div>
         )}
       </li>
